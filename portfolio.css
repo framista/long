@@ -1,0 +1,91 @@
+:root {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    background: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+    .navigation__ul {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        font-size: 2rem;
+    }
+    .navigation__ul {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        font-size: 2.2rem;
+    }
+    .navigation__ul {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .logo {
+        font-size: 2.4rem;
+    }
+    .navigation__ul {
+        font-size: 1.8rem;
+    }
+}
+
+.header {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: 0.02em;
+    margin-left: 5vw;
+    color: #515151;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: #515151;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+}
+
+.navigation__ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    letter-spacing: 0.02em;
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    color: #515151;
+    padding: 1.1em;
+}
+
+/* 
+font-family: 'Ubuntu', sans-serif; 
+*/
