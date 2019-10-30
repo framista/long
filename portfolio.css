@@ -3,6 +3,7 @@
     font-size: 10px;
     --orange: #FF9A3D;
     --yellow: #FFC53D;
+    --grey: #FAFAFF;
 }
 
 *, ::before, ::after {
@@ -21,11 +22,17 @@ body {
     .navigation__ul, .help__button {
         font-size: 1.2rem;
     }
+    .aboutme__p, .identities__p {
+        font-size: 1rem;
+    }
     .welcome__h1 {
         font-size: 8.7rem;
     }
     .welcome__h3, .help__h3 {
         font-size: 2.7rem;
+    }
+    .rectangle__h4 {
+        font-size: 2.4rem;
     }
 }
 
@@ -36,11 +43,17 @@ body {
     .navigation__ul, .help__button {
         font-size: 1.4rem;
     }
+    .aboutme__p, .identities__p {
+        font-size: 1.3rem;
+    }
     .welcome__h1 {
         font-size: 9.7rem;
     }
     .welcome__h3, .help__h3 {
         font-size: 3.0rem;
+    }
+    .rectangle__h4 {
+        font-size: 2.8rem;
     }
 }
 
@@ -48,7 +61,7 @@ body {
     .logo {
         font-size: 2.2rem;
     }
-    .navigation__ul, .help__button {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p {
         font-size: 1.6rem;
     }
     .welcome__h1 {
@@ -57,13 +70,16 @@ body {
     .welcome__h3, .help__h3 {
         font-size: 3.3rem;
     }
+    .rectangle__h4 {
+        font-size: 3rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .logo {
         font-size: 2.4rem;
     }
-    .navigation__ul, .help__button {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p {
         font-size: 1.8rem;
     }
     .welcome__h1 {
@@ -71,6 +87,9 @@ body {
     }
     .welcome__h3, .help__h3 {
         font-size: 3.6rem;
+    }
+    .rectangle__h4 {
+        font-size: 3.2rem;
     }
 }
 
@@ -207,6 +226,78 @@ body {
     background: linear-gradient(270deg, var(--yellow) 14%, var(--orange) 68.5%);
 }
 
-/* 
-font-family: 'Ubuntu', sans-serif; 
-*/
+.rectangle {
+    background: var(--grey);
+    height: 430px;
+    width: 66.6vw;
+    position: relative;
+}
+
+.rectangle__h4 {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #222222;
+    position: absolute;
+    top: 0.8em;
+    left: 1em;
+}
+
+.aboutme {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 2fr 4fr;
+    grid-template-areas: "image identities description";
+    grid-gap: 3em;
+    width: 85vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 280px;
+    align-items: center;
+}
+
+.aboutme__photo {
+    height: 97px;
+    border-radius: 97px;
+    grid-area: image;
+    align-self: center;
+    transform: translateY(-50%);
+    margin-left: 2em;
+}
+
+.aboutme__identities {
+    grid-area: identities;
+}
+
+.identities__p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    align-items: center;
+    letter-spacing: 0.02em;
+    line-height: 160.86%;
+    color: #222222;
+}
+
+.identities__span{
+    color: var(--yellow);
+}
+
+.aboutme__p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    align-items: center;
+    letter-spacing: 0.04em;
+    line-height: 1.5em;
+    color: #222222;
+}
+
+.aboutme__border {
+    display: inline-block;
+    border-left: 4px dashed var(--yellow);
+    padding-left: 2.4em;
+}
