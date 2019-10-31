@@ -16,7 +16,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .logo {
+    .logo, .skills__p {
         font-size: 1.8rem;
     }
     .navigation__ul, .help__button {
@@ -37,7 +37,7 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-    .logo {
+    .logo, .skills__p {
         font-size: 2rem;
     }
     .navigation__ul, .help__button {
@@ -58,11 +58,11 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-    .logo {
+    .logo, .skills__p {
         font-size: 2.2rem;
     }
     .navigation__ul, .help__button, .aboutme__p, .identities__p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .welcome__h1 {
         font-size: 10.7rem;
@@ -76,7 +76,7 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-    .logo {
+    .logo, .skills__p {
         font-size: 2.4rem;
     }
     .navigation__ul, .help__button, .aboutme__p, .identities__p {
@@ -254,9 +254,11 @@ body {
     width: 85vw;
     position: absolute;
     top: 50%;
+    left: 10%;
     transform: translateY(-50%);
     height: 280px;
     align-items: center;
+    box-shadow: 3px 3px 3px 3px rgba(112, 112, 112, 0.68);
 }
 
 .aboutme__photo {
@@ -280,9 +282,10 @@ body {
     letter-spacing: 0.02em;
     line-height: 160.86%;
     color: #222222;
+    grid-area: description;
 }
 
-.identities__span{
+.identities__span {
     color: var(--yellow);
 }
 
@@ -300,4 +303,56 @@ body {
     display: inline-block;
     border-left: 4px dashed var(--yellow);
     padding-left: 2.4em;
+    padding-right: 0.9em;
+}
+
+.rectangle2 {
+    margin-top: 8vh;
+    right: 0px;
+    position: absolute;
+}
+
+.skills {
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "design frontend backend";
+    width: 85vw;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 3px 3px rgba(112, 112, 112, 0.68);
+}
+
+.skills__column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills__column--center{
+    border-left: 4px dashed var(--yellow);
+    border-right: 4px dashed var(--yellow);
+}
+
+.skills__icon {
+    font-size: 83px;
+    text-align: center;
+}
+
+.skills__p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    text-align: center;
+}
+
+.skills__p--first {
+    padding-top: 0.8em;
+    color: var(--yellow);
 }
