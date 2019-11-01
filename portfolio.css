@@ -19,7 +19,7 @@ body {
     .logo, .skills__p {
         font-size: 1.8rem;
     }
-    .navigation__ul, .help__button {
+    .navigation__ul, .help__button, .portfolio__button {
         font-size: 1.2rem;
     }
     .aboutme__p, .identities__p {
@@ -34,13 +34,22 @@ body {
     .rectangle__h4 {
         font-size: 2.4rem;
     }
+    .portfolio__h2 {
+        font-size: 2rem;
+    }
+    .portfolio__p {
+        font-size: 0.8rem;
+    }
+    .skills__icon {
+        font-size: 5.3rem;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .logo, .skills__p {
         font-size: 2rem;
     }
-    .navigation__ul, .help__button {
+    .navigation__ul, .help__button, .portfolio__button {
         font-size: 1.4rem;
     }
     .aboutme__p, .identities__p {
@@ -55,13 +64,22 @@ body {
     .rectangle__h4 {
         font-size: 2.8rem;
     }
+    .portfolio__h2 {
+        font-size: 2.6rem;
+    }
+    .portfolio__p {
+        font-size: 1.0rem;
+    }
+    .skills__icon {
+        font-size: 6.3rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .logo, .skills__p {
         font-size: 2.2rem;
     }
-    .navigation__ul, .help__button, .aboutme__p, .identities__p {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button {
         font-size: 1.5rem;
     }
     .welcome__h1 {
@@ -73,13 +91,22 @@ body {
     .rectangle__h4 {
         font-size: 3rem;
     }
+    .portfolio__h2 {
+        font-size: 3.4rem;
+    }
+    .portfolio__p {
+        font-size: 1.3rem;
+    }
+    .skills__icon {
+        font-size: 7.3rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .logo, .skills__p {
         font-size: 2.4rem;
     }
-    .navigation__ul, .help__button, .aboutme__p, .identities__p {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button {
         font-size: 1.8rem;
     }
     .welcome__h1 {
@@ -90,6 +117,15 @@ body {
     }
     .rectangle__h4 {
         font-size: 3.2rem;
+    }
+    .portfolio__h2 {
+        font-size: 4rem;
+    }
+    .portfolio__p {
+        font-size: 1.6rem;
+    }
+    .skills__icon {
+        font-size: 8.3rem;
     }
 }
 
@@ -334,13 +370,12 @@ body {
     flex-direction: column;
 }
 
-.skills__column--center{
+.skills__column--center {
     border-left: 4px dashed var(--yellow);
     border-right: 4px dashed var(--yellow);
 }
 
 .skills__icon {
-    font-size: 83px;
     text-align: center;
 }
 
@@ -355,4 +390,71 @@ body {
 .skills__p--first {
     padding-top: 0.8em;
     color: var(--yellow);
+}
+
+.rectangle3 {
+    margin-top: calc(8vh + 430px);
+    position: absolute;
+    width: 100%;
+    background: #ffffff;
+}
+
+.rectangle__h4--center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio {
+    top: 17%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.portfolio__img {
+    width: 33.333%;
+    height: auto;
+}
+
+.portfolio__img--first {
+    background-image: url(https://images.unsplash.com/photo-1502085026219-54ac00e06fd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio__img--last {
+    background-image: url(https://images.unsplash.com/photo-1471014645228-037cfcd2bdc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portfolio__h2 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-left: 16px;
+    margin-top: 6px;
+}
+
+.portfolio__p {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin: 0.8em 16px;
+}
+
+.portfolio__button {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(270deg, var(--yellow) 14%, var(--orange) 68.5%);
+    border-radius: 15px;
+    border: var(--orange);
+    margin-left: 16px;
 }
