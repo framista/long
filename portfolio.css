@@ -19,7 +19,7 @@ body {
     .logo, .skills__p {
         font-size: 1.8rem;
     }
-    .navigation__ul, .help__button, .portfolio__button {
+    .navigation__ul, .help__button, .portfolio__button, .contact__h5, .contact__p, .contact__p--top, .contact__submit {
         font-size: 1.2rem;
     }
     .aboutme__p, .identities__p {
@@ -28,7 +28,7 @@ body {
     .welcome__h1 {
         font-size: 8.7rem;
     }
-    .welcome__h3, .help__h3 {
+    .welcome__h3, .help__h3, .contact__h3 {
         font-size: 2.7rem;
     }
     .rectangle__h4 {
@@ -43,13 +43,16 @@ body {
     .skills__icon {
         font-size: 5.3rem;
     }
+    .rectangle4 {
+        margin-top: calc(790px);
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .logo, .skills__p {
         font-size: 2rem;
     }
-    .navigation__ul, .help__button, .portfolio__button {
+    .navigation__ul, .help__button, .portfolio__button, .contact__h5, .contact__p, .contact__p--top, .contact__submit {
         font-size: 1.4rem;
     }
     .aboutme__p, .identities__p {
@@ -58,7 +61,7 @@ body {
     .welcome__h1 {
         font-size: 9.7rem;
     }
-    .welcome__h3, .help__h3 {
+    .welcome__h3, .help__h3, .contact__h3 {
         font-size: 3.0rem;
     }
     .rectangle__h4 {
@@ -73,19 +76,25 @@ body {
     .skills__icon {
         font-size: 6.3rem;
     }
+    .rectangle3 {
+        height: 500px;
+    }
+    .rectangle4 {
+        margin-top: calc(890px);
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .logo, .skills__p {
         font-size: 2.2rem;
     }
-    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button, .contact__h5, .contact__p, .contact__p--top, .contact__submit {
         font-size: 1.5rem;
     }
     .welcome__h1 {
         font-size: 10.7rem;
     }
-    .welcome__h3, .help__h3 {
+    .welcome__h3, .help__h3, .contact__h3 {
         font-size: 3.3rem;
     }
     .rectangle__h4 {
@@ -100,19 +109,22 @@ body {
     .skills__icon {
         font-size: 7.3rem;
     }
+    .rectangle4 {
+        margin-top: calc(1000px);
+    }
 }
 
 @media only screen and (min-width: 992px) {
     .logo, .skills__p {
         font-size: 2.4rem;
     }
-    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button {
+    .navigation__ul, .help__button, .aboutme__p, .identities__p, .portfolio__button, .contact__h5, .contact__p, .contact__p--top, .contact__submit {
         font-size: 1.8rem;
     }
     .welcome__h1 {
         font-size: 11.7rem;
     }
-    .welcome__h3, .help__h3 {
+    .welcome__h3, .help__h3, .contact__h3 {
         font-size: 3.6rem;
     }
     .rectangle__h4 {
@@ -126,6 +138,15 @@ body {
     }
     .skills__icon {
         font-size: 8.3rem;
+    }
+    .rectangle4 {
+        margin-top: calc(1060px);
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .rectangle4 {
+        margin-top: calc(1260px);
     }
 }
 
@@ -264,9 +285,10 @@ body {
 
 .rectangle {
     background: var(--grey);
-    height: 430px;
+    min-height: 430px;
     width: 66.6vw;
     position: relative;
+    /* display: block; */
 }
 
 .rectangle__h4 {
@@ -409,7 +431,7 @@ body {
     top: 17%;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
+    position: absolute;
 }
 
 .portfolio__img {
@@ -457,4 +479,138 @@ body {
     border-radius: 15px;
     border: var(--orange);
     margin-left: 16px;
+    padding: 2px 15px;
+}
+
+.rectangle4 {
+    position: relative;
+    width: 100%;
+    height: 785px;
+    right: 0px;
+}
+
+.contact {
+    height: 621px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "informationTop form" "informationBottom form";
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: #ffffff;
+}
+
+.contact--left--top {
+    grid-area: informationTop;
+    background: var(--orange);
+    border: solid var(--orange) 2px;
+}
+
+.contact--left--bottom {
+    grid-area: informationBottom;
+    background: var(--orange);
+    position: relative;
+    border: solid var(--orange) 2px;
+}
+
+.contact__icon {
+    color: var(--orange);
+    background: #fff;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 12.5px;
+    margin: 10em 0.3em 0.3em 10px;
+}
+
+.contact__icon--first {
+    margin-left: 15px;
+}
+
+.contact__link {
+    text-decoration: none;
+}
+
+.contact__p {
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.1em;
+    letter-spacing: 0.02em;
+    margin-left: 15px;
+}
+
+.contact__h5 {
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.8em;
+    letter-spacing: 0.02em;
+    margin-left: 15px;
+}
+
+.contact__icon--top {
+    color: #ffffff;
+    font-size: 50px;
+    transform: rotate(-15deg);
+    margin: 30px;
+}
+
+.contact__p--top {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.contact--right {
+    grid-area: form;
+    background: #ffffff;
+}
+
+.contact__h3 {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 172.35%;
+    letter-spacing: 0.04em;
+    color: #222222;
+    margin: 20px 7.5% 20px 7.5%;
+}
+
+.contact__input {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    color: #A0A0A0;
+    width: 85%;
+    margin-left: 7.5%;
+    margin-bottom: 20px;
+}
+
+.contact__submit {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(270deg, var(--yellow) 14%, var(--orange) 68.5%);
+    border-radius: 15px;
+    border: var(--orange);
+    margin-top: 15px;
+    padding: 2px 15px;
+    left: 84%;
+    position: absolute;
 }

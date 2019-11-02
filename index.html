@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="fontawesome-free-5.11.2-web\fontawesome-free-5.11.2-web\css\all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css" type="text/css">
 </head>
 
@@ -68,7 +70,7 @@
                 <p class="identities__p">E-mail: <span class="identities__span"><u>night-coding@dev.com</u></span></p>
             </div>
             <p class="aboutme__p"><span class="aboutme__border">Exercitation deserunt sint consectetur nostrud
-                    adipisicing nisi proident elit aliqua adipisicing occaecat enim ad. Tempor elit laborum amet est
+                    nisi proident elit adipisicing occaecat enim ad. Tempor elit laborum amet est
                     eiusmod labore. Id incididunt deserunt dolor non aute velit sit eu mollit consequat adipisicing
                     pariatur consectetur. Laboris ea minim cillum velit quis dolore non tempor culpa proident pariatur.
                 </span></p>
@@ -95,6 +97,7 @@
             </div>
         </div>
     </section>
+
     <section class="rectangle rectangle3">
         <h4 class="rectangle__h4 rectangle__h4--center">Portfolio</h4>
         <div class="portfolio">
@@ -114,10 +117,44 @@
                 src="https://images.unsplash.com/photo-1563481551840-12b6ab093799?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80">
             <div class="portfolio__img portfolio__img--last">
                 <h2 class="portfolio__h2">Design project</h2>
-                <p class="portfolio__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, laudantium consectetur.</p>
+                <p class="portfolio__p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, laudantium
+                    consectetur.</p>
                 <button class="portfolio__button">View</button>
             </div>
+        </div>
+    </section>
 
+    <section class="rectangle rectangle4">
+        <h4 class="rectangle__h4">Contact us</h4>
+        <div class="contact">
+            <div class="contact--left--top">
+                <i class="far fa-envelope contact__icon--top"></i>
+                <p class="contact__p--top">Please describe your question. Send me a message and I will answer you as
+                    soon as possible! </p>
+            </div>
+            <div class="contact--left--bottom">
+                <a href="https://twitter.com/?lang=pl" class="contact__link"><i
+                        class="fab fa-twitter contact__icon contact__icon--first"></i></a>
+                <a href="https://www.instagram.com" class="contact__link"><i
+                        class="fab fa-linkedin-in contact__icon"></i></a>
+                <a href="https://github.com/" class="contact__link"><i class="fab fa-github contact__icon"></i></a>
+                <a href="https://www.facebook.com" class="contact__link"><i
+                        class="fab fa-facebook-f contact__icon"></i></a>
+                <h5 class="contact__h5">Designer Poland, Wrocław</h5>
+                <p class="contact__p">ul. Tęczowa 12/3 50-000 </p>
+                <p class="contact__p">+48 123-456-789 </p>
+                <p class="contact__p"><u>night-coding@dev.com</u></p>
+            </div>
+            <div class="contact--right form-group">
+                <form class="contact__form">
+                    <h3 class="contact__h3">Let's start!</h3>
+                    <input type="text" class="form-control contact__input" placeholder="Name" required>
+                    <input type="email" class="form-control contact__input" placeholder="Your e-mail adress" required>
+                    <input type="text" class="form-control contact__input" placeholder="Topic">
+                    <textarea class="form-control contact__input" rows="10" placeholder="Message" required></textarea>
+                    <input type="submit" value="Send" class="contact__submit">
+                </form>
+            </div>
         </div>
     </section>
 
