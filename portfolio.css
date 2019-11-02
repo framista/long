@@ -165,7 +165,7 @@ body {
 }
 
 .logo__link {
-    text-decoration: none;
+    text-decoration: none !important;
     color: #515151;
     font-style: normal;
     font-weight: bold;
@@ -182,7 +182,7 @@ body {
 }
 
 .navigation__link {
-    text-decoration: none;
+    text-decoration: none !important;
     font-style: normal;
     font-weight: bold;
     color: #515151;
@@ -238,7 +238,7 @@ body {
 }
 
 .welcome__link {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .help {
@@ -289,7 +289,6 @@ body {
     min-height: 430px;
     width: 66.6vw;
     position: relative;
-    /* display: block; */
 }
 
 .rectangle__h4 {
@@ -507,14 +506,12 @@ body {
 .contact--left--top {
     grid-area: informationTop;
     background: var(--orange);
-    border: solid var(--orange) 2px;
 }
 
 .contact--left--bottom {
     grid-area: informationBottom;
     background: var(--orange);
     position: relative;
-    border: solid var(--orange) 2px;
 }
 
 .contact__icon {
@@ -561,8 +558,17 @@ body {
 .contact__icon--top {
     color: #ffffff;
     font-size: 50px;
-    transform: rotate(-15deg);
     margin: 30px;
+    animation: changeEnvelope 3s linear infinite;
+}
+
+@keyframes changeEnvelope
+{
+  0% { color: rgb(214, 126, 115); transform: translateX(0%) rotate(-15deg);}
+  25% { color: #263479; transform: translateX(50%)  rotate(15deg);}
+  50% { color: #267934; transform: translateX(100%)  rotate(-15deg);}
+  75% { color: #792626; transform: translateX(50%)  rotate(15deg);}
+  100% { color: rgb(128, 77, 11); transform: translateX(0%)  rotate(-15deg);}
 }
 
 .contact__p--top {
