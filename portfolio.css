@@ -178,6 +178,7 @@ body {
     justify-content: flex-end;
     flex: 1;
     letter-spacing: 0.02em;
+    margin-top: 10px;
 }
 
 .navigation__link {
@@ -526,7 +527,7 @@ body {
     line-height: 20px;
     vertical-align: middle;
     font-size: 12.5px;
-    margin: 10em 0.3em 0.3em 10px;
+    margin: 10em 0.3em 1.3em 10px;
 }
 
 .contact__icon--first {
@@ -613,4 +614,21 @@ body {
     padding: 2px 15px;
     left: 84%;
     position: absolute;
+}
+
+.footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__p{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #A0A0A0;
+    margin-bottom: 0px;
 }
