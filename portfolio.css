@@ -237,6 +237,11 @@ body {
     margin: 0.8em;
 }
 
+.welcome__icon:hover{
+    background: var(--orange);
+    color: #ffffff;
+}
+
 .welcome__link {
     text-decoration: none !important;
 }
@@ -279,9 +284,17 @@ body {
     background: #ffffff;
 }
 
+.help__button--first:hover{
+    background: var(--grey);
+}
+
 .help__button--second {
     color: #ffffff;
     background: linear-gradient(270deg, var(--yellow) 14%, var(--orange) 68.5%);
+}
+
+.help__button--second:hover{
+    color: #222222;
 }
 
 .rectangle {
@@ -481,6 +494,9 @@ body {
     margin-left: 16px;
     padding: 2px 15px;
 }
+.portfolio__button:hover {
+    color: #222222;
+}
 
 .rectangle4 {
     position: relative;
@@ -525,6 +541,10 @@ body {
     vertical-align: middle;
     font-size: 12.5px;
     margin: 10em 0.3em 1.3em 10px;
+}
+
+.contact__icon:hover{
+    color: #222222;
 }
 
 .contact__icon--first {
@@ -620,6 +640,10 @@ body {
     padding: 2px 15px;
     left: 84%;
     position: absolute;
+}
+
+.contact__submit:hover{
+    color: #222222;
 }
 
 .footer{
