@@ -9,7 +9,7 @@ Simple website
 To clone and run this application, you'll need Git installed on your computer. From your command line:
 ```
 # Clone this repository
-$ git clone https://github.com/framista/portfolio
+$ git clone https://github.com/framista/long
 
 # Go into the repository
 $ cd portfolio
@@ -17,5 +17,4 @@ $ cd portfolio
 # Open index.html
 ```
 ## Demo
-https://framista.github.io/portfolio/
-
+https://framista.github.io/long/
